@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Pragati+Narrow");
+* {
+    font-family: "Pragati Narrow", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #888;
+    font-size: 16px;
+}
+
+/*navbar setup*/
+
+.navbar-default {
+    background-color: #562f90;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbar-default .navbar-brand {
+    color: aliceblue;
+    width: 280px;
+    height: 65px;
+    padding: 25px 0;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: yellowgreen;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav a {
+    line-height: 30px;
+}
+
+.dope:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    /*background: #9d426b;
+    color: #fff;*/
+    background-color: white;
+    color: black;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.navbar-default .navbar-text {
+    color: coral;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+    color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+    color: black;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: black;
+}
+
+.navbar-form .form-group {
+    padding: 6px 0;
+}
+
+.bg-primary {
+    color: #fff;
+    background-color: black;
+}
+
+header {
+    margin-top: 80px;
+}
+
+#anim {
+    width: 100%;
+    height: 100% transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+/*#anim {
+    width: 100%;
+    position: absolute; top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}*/
+
+h1 {
+    font-size: 4.3em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cssanimation,
+.cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span {
+    display: inline-block
+}
+
+.pushRelease {
+    animation-name: pushRelease
+}
+
+@keyframes pushRelease {
+    15% {
+        transform: scale(.5)
+    }
+}
+
+#about {
+    padding: 70px 0;
+}
+
+
+#location {
+    background-color: grey;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.profile-card {
+    background-color: black;
+    box-shadow: 1px 1px 10px 1px #bbb;
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    transition: all .1s;
+    border-radius: 5px;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+}
+
+import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+#contact {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h2, #contact {
+   text-align: center;
+   color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+}
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,400,400i,700');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.map {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+ #canadaMap {
+ 	width: 60vw;
+ 	margin: 0 auto;
+ 	display: block;
+ 	padding-top:4vh;
+ }
+svg {
+	fill: white;
+}
+
+g:hover{ 
+	fill: pink;
+	cursor: pointer;
+ }
+.province_text{
+	font-size:11px;
+	fill:black;}
+.st2{fill:none;}
+.st3{font-family:'MyriadPro-Regular';}
+.st5{fill:#FFFFFF;}
+.st6{fill:black;}
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+        text-align: center;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: aquamarine;
+        background-color: black;
+    }
+    .navbar-fixed-top .navbar-collapse {
+        max-height: initial;
+    }
+    .navbar-default .navbar-brand {
+        margin-left: 20px;
+        width: 0px;
+    }
+
+    .navbar-toggle {
+        padding: 10px 10px;
+        margin-top: 15px;
+    }
+
+    .profile-card {
+        width: 400px;
+        height: 400px;
+    }
